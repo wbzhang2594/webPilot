@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style type="text/css">
+        #left {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        
+        #des {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="left">
+        <button onclick="move(this)">点击移动</button>
+    </div>
+    <div id="des">
+    </div>
+</body>
+<script type="text/javascript">
+    var des = document.getElementById('des');
+    // var des = document.getElementById('left');
+
+    function move(obj) {
+        //克隆
+        var newObj = obj.cloneNode(true);
+        des.appendChild(newObj);
+        //			//删除子节点方法
+        // 			left.removeChild(obj);
+        //			//删除子节点方法
+        //			obj.parentNode.removeChild(obj);
+    }
+</script>
+
+</html>

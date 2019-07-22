@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>键盘打字练习</title>
+    <!-- <script type="text/javascript" src="js/canvas.js"></script> -->
+    <link rel="stylesheet" href="css/myStyle.css" />
+
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./js/typingGame/utility.js"></script>
+
+    <!-- <script type="text/javascript">
+        var theHeight = 50;
+    </script> -->
+    <script type="text/javascript">
+        $(document).ready(
+            function() {
+                document.onkeydown = function() {
+                    var oEvent = window.event;
+                    CharacterFactory.getInstance().findAndRemove(oEvent.key);
+
+                }
+            });
+    </script>
+
+</head>
+
+<body>
+    <div class="status_row">
+        <button onclick="createChar(10)">开始</button>
+        <label id="char1">命中数</label>
+    </div>
+
+    <div id="backStage" class="backStage">
+        <div id="role_targetC" class="targetC">
+            <label class="content">CCC</label>
+        </div>
+    </div>
+    <div id="stage" class="stage">
+
+    </div>
+
+</body>
+
+</html>

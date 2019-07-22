@@ -1,0 +1,41 @@
+.refApp {
+    background-color: aquamarine;
+    width: 200px;
+    /* height: 60px; */
+    margin: 5px;
+    padding: 20px;
+    font-size: large;
+    border: 3px solid rgb(91, 206, 200);
+    float: left;
+}
+
+.status_row {
+    background-color: #86c8e6;
+    /* width: 50%; */
+    height: 10%;
+}
+
+.status_row * {
+    margin: 0px 20px;
+}
+
+.desktop {
+    position: absolute;
+    /* left: 100px; */
+    top: 150px;
+    font-size: 50px
+}
+
+.targetC {
+    position: static;
+    /* left: 100px;
+    top: 150px; */
+    font-size: 100px;
+    float: left;
+    margin: 10px;
+}
+
+.backStage {
+    visibility: hidden;
+    position: absolute;
+}
